@@ -173,10 +173,17 @@ function scrollStrip(slug, direction) {
                 :aria-label="item.service_slug ? `Open ${item.title}` : undefined"
               >
                 <div
-                  class="flex min-h-[9.5rem] flex-1 items-center justify-center px-4 py-8"
+                  class="flex min-h-[9.5rem] flex-1 items-center justify-center p-4 overflow-hidden"
                   :class="bandClass(cat.slug)"
                 >
+                  <img
+                    v-if="item.image"
+                    :src="item.image"
+                    :alt="item.imageAlt || item.title"
+                    class="h-24 w-auto max-w-full rounded-lg object-contain shadow-md"
+                  />
                   <component
+                    v-else
                     :is="iconComponent(item.icon)"
                     class="h-12 w-12 text-white sm:h-14 sm:w-14"
                     stroke-width="1.35"

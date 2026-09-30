@@ -52,7 +52,7 @@ class ServicesController
                             'title' => $i->title,
                             'description' => $i->description,
                             'icon' => $i->icon,
-                            'image' => $i->imageUrl(),
+                            'image' => $i->imageUrl() ?: $service?->imageUrl('hero_image_path'),
                             'imageAlt' => $i->image_alt,
                             'service_slug' => $service?->slug,
                         ];

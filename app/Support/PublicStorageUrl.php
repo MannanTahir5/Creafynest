@@ -59,7 +59,7 @@ final class PublicStorageUrl
         $normalized = str_replace('\\', '/', ltrim($storedRelativePath, '/'));
         $publicFile = public_path('storage/'.$normalized);
 
-        return is_file($publicFile);
+        return file_exists($publicFile) || Storage::disk('public')->exists($storedRelativePath);
     }
 
     public static function webpUrl(?string $storedRelativePath): ?string

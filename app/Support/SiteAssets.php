@@ -82,11 +82,15 @@ final class SiteAssets
 
     public static function ensureService(Service $service, bool $force = false): void
     {
+        if (! $force && $service->hero_image_path && Storage::disk('public')->exists($service->hero_image_path)) {
+            return;
+        }
+
         $service->loadMissing('category:id,title,slug');
 
         $generated = ServicePlaceholderImage::ensureForService($service, $force);
 
-        if ($generated && $service->hero_image_path !== $generated) {
+        if ($generated && (! $service->hero_image_path || ! Storage::disk('public')->exists($service->hero_image_path))) {
             $service->update(['hero_image_path' => $generated]);
         }
     }
