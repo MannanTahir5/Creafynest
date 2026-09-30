@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Professional logo design preview">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbf8f3"/>
+      <stop offset="100%" stop-color="#faf6ef"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="52" y="56" width="1096" height="788" rx="48" fill="#ffedd5"/>
+  <rect x="88" y="92" width="1024" height="716" rx="40" fill="url(#violet)"/>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <circle cx="860" cy="250" r="200" fill="#8b5cf6" opacity="0.55"/>
+  <circle cx="320" cy="560" r="240" fill="#7c3aed" opacity="0.4"/>
+  <circle cx="600" cy="400" r="118" fill="#f97316"/>
+  <circle cx="600" cy="400" r="88" fill="#ffffff"/>
+  <circle cx="600" cy="400" r="58" fill="#ea580c"/>
+  <text x="600" y="412" text-anchor="middle" fill="#ffffff" font-family="system-ui,Segoe UI,sans-serif" font-size="52" font-weight="700">Aa</text>
+  <text x="600" y="540" text-anchor="middle" fill="#ffffff" font-family="system-ui,Segoe UI,sans-serif" font-size="28" font-weight="700">Logo Design</text>
+  <text x="600" y="578" text-anchor="middle" fill="#e9d5ff" font-family="system-ui,Segoe UI,sans-serif" font-size="14" font-weight="600" letter-spacing="0.18em">LOGO &amp; BRAND IDENTITY</text>
+  <rect x="720" y="680" width="420" height="130" rx="20" fill="#ffffff" filter="drop-shadow(0 12px 28px rgba(15,23,42,0.12))"/>
+  <rect x="720" y="680" width="6" height="130" rx="3" fill="#ea580c"/>
+  <text x="748" y="718" fill="#ea580c" font-family="system-ui,Segoe UI,sans-serif" font-size="11" font-weight="700" letter-spacing="0.14em">LOGO &amp; BRAND IDENTITY</text>
+  <text x="748" y="748" fill="#1e293b" font-family="system-ui,Segoe UI,sans-serif" font-size="15" font-weight="600">Clear concepts, refined files,</text>
+  <text x="748" y="772" fill="#475569" font-family="system-ui,Segoe UI,sans-serif" font-size="14">and formats ready to use.</text>
+</svg>

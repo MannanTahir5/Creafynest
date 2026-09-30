@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "slug": "ai-mobile-development",
+      "title": "AI Mobile Development",
+      "subtitle": "AI-native mobile apps, intelligent software, and production integrations.",
+      "feature_icon": "Smartphone",
+      "color": "violet",
+      "services": [
+        { "title": "AI Mobile Apps", "slug": "ai-mobile-apps", "icon": "Smartphone", "description": "Native and cross-platform apps with on-device or API-driven AI features your users rely on daily." },
+        { "title": "AI Websites & Software", "slug": "ai-websites-software", "icon": "Monitor", "description": "Web apps and internal tools with embedded assistants, automation, and model-backed workflows." },
+        { "title": "AI Chatbot", "slug": "ai-chatbot-development", "icon": "MessageSquare", "description": "Support, sales, and product chatbots grounded in your knowledge base with human handoff." },
+        { "title": "AI Integrations", "slug": "ai-integrations", "icon": "Plug", "description": "Connect CRMs, help desks, and data stores to LLMs and agents with reliable APIs and webhooks." },
+        { "title": "AI Agents", "slug": "ai-agents", "icon": "Bot", "description": "Autonomous agents that plan, call tools, and complete multi-step tasks with guardrails." },
+        { "title": "AI Fine-Tuning", "slug": "ai-fine-tuning", "icon": "Cpu", "description": "Custom model fine-tuning, eval harnesses, and deployment tuned to your domain vocabulary." }
+      ]
+    },
+    {
+      "slug": "ai-creative-artists",
+      "title": "AI Artists",
+      "subtitle": "Generative art direction, workflows, and platform specialists.",
+      "feature_icon": "Sparkles",
+      "color": "fuchsia",
+      "services": [
+        { "title": "AI Avatar Design", "slug": "ai-avatar-design", "icon": "UserCircle", "description": "On-brand AI avatars for profiles, streams, and marketing — refined by human designers." },
+        { "title": "ComfyUI Workflow Creation", "slug": "comfyui-workflow-creation", "icon": "GitBranch", "description": "Reproducible ComfyUI graphs for consistent styles, batch generation, and team handoff." },
+        { "title": "AI Image Editing", "slug": "ai-image-editing", "icon": "Wand2", "description": "AI-assisted retouching and compositing with quality control for campaign-ready assets." },
+        { "title": "Midjourney Artists", "slug": "midjourney-artists", "icon": "Sparkles", "description": "Midjourney specialists for concept art, campaigns, and style-locked prompt libraries." },
+        { "title": "Stable Diffusion Artists", "slug": "stable-diffusion-artists", "icon": "Image", "description": "Custom SD pipelines, LoRAs, and control nets for brand-safe generative imagery." },
+        { "title": "All AI Art Services", "slug": "all-ai-art-services", "icon": "Palette", "description": "End-to-end generative art programs — strategy, production, and delivery across tools." }
+      ]
+    },
+    {
+      "slug": "ai-video-production",
+      "title": "AI Video",
+      "subtitle": "Generative and synthetic video for ads, social, and brand storytelling.",
+      "feature_icon": "Clapperboard",
+      "color": "violet",
+      "services": [
+        { "title": "AI UGC", "slug": "ai-ugc", "icon": "Users", "description": "Synthetic UGC-style clips and creator personas for paid social and performance tests." },
+        { "title": "AI Videography", "slug": "ai-videography", "icon": "Video", "description": "AI-generated b-roll, scenes, and cutaways aligned to scripts and brand guidelines." },
+        { "title": "AI Music Videos", "slug": "ai-music-videos", "icon": "Music", "description": "Music-driven visuals with generative scenes, lyric sync, and platform-ready exports." },
+        { "title": "AI Video Avatars", "slug": "ai-video-avatars", "icon": "UserCircle", "description": "Talking-head avatars for explainers, training, and localized spokesperson videos." }
+      ]
+    },
+    {
+      "slug": "ai-audio",
+      "title": "AI Audio",
+      "subtitle": "Synthetic voice, narration, and speech pipelines for product and media.",
+      "feature_icon": "Mic",
+      "color": "indigo",
+      "services": [
+        { "title": "Voice Synthesis & AI", "slug": "voice-synthesis-ai", "icon": "Waves", "description": "Custom voice models and cloning workflows with consent, safety, and quality review." },
+        { "title": "Text to Speech", "slug": "text-to-speech", "icon": "Volume2", "description": "Natural TTS for apps, IVR, courses, and ads with multilingual and SSML control." }
+      ]
+    },
+    {
+      "slug": "ai-content",
+      "title": "AI Content",
+      "subtitle": "AI-assisted editorial workflows, prompts, and content operations.",
+      "feature_icon": "FileText",
+      "color": "sky",
+      "services": [
+        { "title": "AI Content Editing", "slug": "ai-content-editing", "icon": "PenLine", "description": "Human-in-the-loop editing of AI drafts for blogs, docs, and marketing copy." },
+        { "title": "Custom Writing Prompts", "slug": "custom-writing-prompts", "icon": "ScrollText", "description": "Branded prompt libraries and playbooks so teams generate on-voice content at scale." }
+      ]
+    }
+  ]
+}

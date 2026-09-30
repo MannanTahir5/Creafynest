@@ -1,0 +1,191 @@
+{
+  "categories": [
+    {
+      "slug": "logo-brand-identity",
+      "title": "Logo & Brand Identity",
+      "subtitle": "Memorable marks, cohesive identity systems, and brand guidelines that scale.",
+      "feature_icon": "Palette",
+      "color": "rose",
+      "services": [
+        { "title": "Logo Design", "slug": "logo-design", "icon": "Crown", "description": "Distinctive logos with vector masters, color variants, and clear usage rules." },
+        { "title": "Brand Style Guides", "slug": "brand-style-guides", "icon": "BookOpen", "description": "Documented identity standards for typography, color, voice, and layout." },
+        { "title": "Business Cards & Stationery", "slug": "business-cards-stationery", "icon": "IdCard", "description": "Print-ready stationery suites aligned to your brand system." },
+        { "title": "Fonts & Typography", "slug": "fonts-typography", "icon": "Type", "description": "Type pairing, hierarchy, and licensing guidance for digital and print." }
+      ]
+    },
+    {
+      "slug": "art-illustration",
+      "title": "Art & Illustration",
+      "subtitle": "Custom artwork, character design, and illustration for campaigns and products.",
+      "feature_icon": "Paintbrush",
+      "color": "fuchsia",
+      "services": [
+        { "title": "Illustration", "slug": "illustration", "icon": "Paintbrush", "description": "Original illustrations tailored to your brand story and channels." },
+        { "title": "AI Artists", "slug": "ai-artists", "icon": "Sparkles", "description": "Curated AI-assisted art direction with human refinement and brand guardrails." },
+        { "title": "AI Avatar Design", "slug": "ai-avatar-design", "icon": "Bot", "description": "On-brand avatars for profiles, communities, and virtual personas." },
+        { "title": "Portraits & Caricatures", "slug": "portraits-caricatures", "icon": "UserCircle", "description": "Expressive portraits and caricatures for events, gifts, and editorial use." },
+        { "title": "Comic Illustration", "slug": "comic-illustration", "icon": "MessageSquare", "description": "Panel art, inking, and lettering for comics and serialized content." },
+        { "title": "Cartoon Illustration", "slug": "cartoon-illustration", "icon": "Smile", "description": "Playful cartoon styles for mascots, explainers, and youth brands." },
+        { "title": "Storyboards", "slug": "storyboards", "icon": "Clapperboard", "description": "Sequential frames that align creative, production, and stakeholder reviews." },
+        { "title": "Album Cover Design", "slug": "album-cover-design", "icon": "Disc3", "description": "Cover art optimized for streaming platforms and physical releases." },
+        { "title": "Pattern Design", "slug": "pattern-design", "icon": "Grid3x3", "description": "Repeatable patterns for textiles, packaging, and digital backgrounds." },
+        { "title": "Tattoo Design", "slug": "tattoo-design", "icon": "PenLine", "description": "Custom tattoo concepts with linework suited to skin application." }
+      ]
+    },
+    {
+      "slug": "print-design",
+      "title": "Print Design",
+      "subtitle": "High-impact print collateral with correct specs, bleed, and color profiles.",
+      "feature_icon": "Printer",
+      "color": "orange",
+      "services": [
+        { "title": "Brochure Design", "slug": "brochure-design", "icon": "BookOpen", "description": "Folded brochures that communicate clearly and print flawlessly." },
+        { "title": "Flyer Design", "slug": "flyer-design", "icon": "FileText", "description": "Attention-grabbing flyers for events, promos, and local campaigns." },
+        { "title": "Packaging & Label Design", "slug": "packaging-label-design", "icon": "Package", "description": "Shelf-ready packaging and labels with dielines and regulatory space." },
+        { "title": "Poster Design", "slug": "poster-design", "icon": "Image", "description": "Large-format posters for retail, events, and out-of-home placements." },
+        { "title": "Catalog Design", "slug": "catalog-design", "icon": "LayoutGrid", "description": "Product catalogs with structured layouts and consistent product storytelling." },
+        { "title": "Menu Design", "slug": "menu-design", "icon": "UtensilsCrossed", "description": "Restaurant menus that balance readability, appetite appeal, and brand." }
+      ]
+    },
+    {
+      "slug": "books-ebooks",
+      "title": "Books & eBooks",
+      "subtitle": "Covers, interiors, and illustration for print and digital publishing.",
+      "feature_icon": "BookMarked",
+      "color": "amber",
+      "services": [
+        { "title": "Book Design", "slug": "book-design", "icon": "BookOpen", "description": "End-to-end book design from concept through print-ready files." },
+        { "title": "Book Covers", "slug": "book-covers", "icon": "BookImage", "description": "Genre-appropriate covers that stand out in stores and online thumbnails." },
+        { "title": "Book Layout Design & Typesetting", "slug": "book-layout-typesetting", "icon": "AlignLeft", "description": "Interior layouts with professional typography and chapter rhythm." },
+        { "title": "Children's Book Illustration", "slug": "childrens-book-illustration", "icon": "Baby", "description": "Warm, age-appropriate illustration for picture and early reader books." },
+        { "title": "Comic Book Illustration", "slug": "comic-book-illustration", "icon": "Library", "description": "Sequential comic art for issues, graphic novels, and digital releases." }
+      ]
+    },
+    {
+      "slug": "visual-design",
+      "title": "Visual Design",
+      "subtitle": "Polished visuals for decks, resumes, infographics, and everyday brand assets.",
+      "feature_icon": "Image",
+      "color": "sky",
+      "services": [
+        { "title": "Image Editing", "slug": "image-editing", "icon": "Wand2", "description": "Retouching, compositing, and cleanup for marketing and product imagery." },
+        { "title": "AI Image Editing", "slug": "ai-image-editing", "icon": "Sparkles", "description": "AI-enhanced edits with human QC for natural, on-brand results." },
+        { "title": "Presentation Design", "slug": "presentation-design", "icon": "Presentation", "description": "Investor decks, sales slides, and keynote visuals that tell a clear story." },
+        { "title": "Resume Design", "slug": "resume-design", "icon": "FileUser", "description": "Modern resume layouts that scan well for recruiters and ATS." },
+        { "title": "Virtual Backgrounds", "slug": "virtual-backgrounds", "icon": "Monitor", "description": "Branded Zoom and Teams backgrounds for remote teams and events." },
+        { "title": "Infographic Design", "slug": "infographic-design", "icon": "BarChart3", "description": "Data-rich infographics that simplify complex ideas at a glance." },
+        { "title": "Vector Tracing", "slug": "vector-tracing", "icon": "PenTool", "description": "Crisp vector conversions from sketches, scans, and raster logos." }
+      ]
+    },
+    {
+      "slug": "marketing-design",
+      "title": "Marketing Design",
+      "subtitle": "Channel-ready creative for social, email, ads, and physical signage.",
+      "feature_icon": "Megaphone",
+      "color": "pink",
+      "services": [
+        { "title": "Social Media Design", "slug": "social-media-design", "icon": "Share2", "description": "On-brand post templates, stories, and campaign kits for every platform." },
+        { "title": "Email Design", "slug": "email-design", "icon": "Mail", "description": "Responsive email templates that render well across clients and devices." },
+        { "title": "Web Banners", "slug": "web-banners", "icon": "RectangleHorizontal", "description": "Display banners sized for programmatic, retargeting, and site placements." },
+        { "title": "Signage Design", "slug": "signage-design", "icon": "Signpost", "description": "Indoor and outdoor signage with legibility, contrast, and brand impact." }
+      ]
+    },
+    {
+      "slug": "architecture-building-design",
+      "title": "Architecture & Building Design",
+      "subtitle": "Concept visuals and documentation support for built environments.",
+      "feature_icon": "Building2",
+      "color": "slate",
+      "services": [
+        { "title": "Architecture & Interior Design", "slug": "architecture-interior-design", "icon": "Building2", "description": "Spatial concepts, mood boards, and presentation visuals for stakeholders." },
+        { "title": "Landscape Design", "slug": "landscape-design", "icon": "Trees", "description": "Outdoor layouts, planting plans, and illustrative site perspectives." },
+        { "title": "Building Engineering", "slug": "building-engineering", "icon": "HardHat", "description": "Technical drawings support and coordination-ready documentation visuals." },
+        { "title": "Lighting Design", "slug": "lighting-design", "icon": "Lightbulb", "description": "Lighting schemes that balance ambiance, function, and energy goals." }
+      ]
+    },
+    {
+      "slug": "fashion-merchandise",
+      "title": "Fashion & Merchandise",
+      "subtitle": "Apparel graphics, fashion concepts, and merchandise customers want to wear.",
+      "feature_icon": "Shirt",
+      "color": "pink",
+      "services": [
+        { "title": "T-Shirts & Merchandise", "slug": "t-shirts-merchandise", "icon": "Shirt", "description": "Merch graphics and mockups ready for screen print, DTG, or embroidery." },
+        { "title": "Fashion Design", "slug": "fashion-design", "icon": "Scissors", "description": "Garment concepts, flats, and line sheets for collections and lookbooks." },
+        { "title": "Jewelry Design", "slug": "jewelry-design", "icon": "Gem", "description": "Jewelry sketches and renders for manufacturing and ecommerce." }
+      ]
+    },
+    {
+      "slug": "3d-design",
+      "title": "3D Design",
+      "subtitle": "Three-dimensional modeling and renders for products, spaces, and games.",
+      "feature_icon": "Box",
+      "color": "cyan",
+      "services": [
+        { "title": "3D Architecture", "slug": "3d-architecture", "icon": "Building2", "description": "Architectural 3D models and photoreal renders for pitches and approvals." },
+        { "title": "3D Industrial Design", "slug": "3d-industrial-design", "icon": "Factory", "description": "Product CAD-style visuals and concept models for manufacturing dialogue." },
+        { "title": "3D Fashion & Garment", "slug": "3d-fashion-garment", "icon": "Shirt", "description": "Garment simulations and 3D fashion visuals for digital lookbooks." },
+        { "title": "3D Printing Characters", "slug": "3d-printing-characters", "icon": "Cuboid", "description": "Print-ready character models with clean topology and supports." },
+        { "title": "3D Landscape", "slug": "3d-landscape", "icon": "Mountain", "description": "Environmental 3D scenes for masterplans, parks, and real estate." },
+        { "title": "3D Game Art", "slug": "3d-game-art", "icon": "Gamepad2", "description": "Game-ready assets, props, and environments within your engine constraints." },
+        { "title": "3D Jewelry Design", "slug": "3d-jewelry-design", "icon": "Gem", "description": "Detailed jewelry models for rendering, prototyping, and casting." }
+      ]
+    },
+    {
+      "slug": "design-miscellaneous",
+      "title": "Miscellaneous",
+      "subtitle": "Expert design guidance when you need direction before production.",
+      "feature_icon": "MessagesSquare",
+      "color": "slate",
+      "services": [
+        { "title": "Design Consultation", "slug": "design-consultation", "icon": "MessagesSquare", "description": "Strategic design reviews, creative audits, and actionable recommendations." }
+      ]
+    }
+  ],
+  "development_categories": [
+    {
+      "id": "web",
+      "title": "Web Development",
+      "color": "blue",
+      "items": [
+        { "icon": "LayoutTemplate", "title": "Website UI/UX", "description": "Responsive, user-focused design and interfaces that convert.", "href": "/services/website-ui-ux" },
+        { "icon": "FileStack", "title": "CMS", "description": "Content management systems that make updates easy for your team.", "href": "/services/cms-solutions" },
+        { "icon": "Box", "title": "Custom Web Application", "description": "Bespoke web applications built with a modern, maintainable stack.", "href": "/services/custom-web-applications" },
+        { "icon": "ShoppingCart", "title": "E-commerce", "description": "Online stores with secure payments, catalogs, and checkout flows.", "href": "/services/ecommerce-development" }
+      ]
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile App Development",
+      "color": "emerald",
+      "items": [
+        { "icon": "Smartphone", "title": "Mobile App UI/UX", "description": "Intuitive interfaces that keep users engaged across every screen size.", "href": "/services/mobile-app-ui-ux" },
+        { "icon": "Smartphone", "title": "Android App Development", "description": "Native Android apps optimized for the Play Store and real-world devices.", "href": "/services/android-app-development" },
+        { "icon": "Apple", "title": "iOS App Development", "description": "Native iOS apps that meet App Store guidelines and feel at home on Apple devices.", "href": "/services/ios-app-development" },
+        { "icon": "TabletSmartphone", "title": "Cross-Platform Development", "description": "One codebase for iOS and Android—Flutter and other cross-platform stacks when it fits.", "href": "/services/cross-platform-app-development" }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI Solutions",
+      "color": "violet",
+      "items": [
+        { "icon": "Sparkles", "title": "Generative AI", "description": "Custom GPTs and generative workflows grounded in your brand, data, and policies.", "href": "/services/generative-ai" },
+        { "icon": "Mic", "title": "Voice AI", "description": "Voice assistants and speech-driven experiences for natural, hands-free interaction.", "href": "/services/voice-ai" },
+        { "icon": "Binary", "title": "Custom Model", "description": "Train, fine-tune, and deploy models with clear evaluation, cost control, and monitoring.", "href": "/services/custom-ai-model-integration" },
+        { "icon": "Database", "title": "RAG", "description": "Retrieval-augmented generation with citations, guardrails, and your knowledge base.", "href": "/services/rag-retrieval-systems" }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Digital Marketing",
+      "color": "amber",
+      "items": [
+        { "icon": "Search", "title": "SEO", "description": "Technical and content SEO that improves visibility and measurable organic growth.", "href": "/services/seo-services" },
+        { "icon": "Share2", "title": "Social Media Marketing", "description": "Campaigns and creative iterations that increase engagement and reach.", "href": "/services/social-media-marketing" },
+        { "icon": "MousePointerClick", "title": "PPC", "description": "Paid search and paid social campaigns tuned for ROI and landing-page alignment.", "href": "/services/ppc-advertising" },
+        { "icon": "PenLine", "title": "Content Writing", "description": "Copy and blogs that support SEO, nurture leads, and tell your story clearly.", "href": "/services/content-writing" }
+      ]
+    }
+  ]
+}

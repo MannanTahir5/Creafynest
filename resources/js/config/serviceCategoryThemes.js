@@ -1,0 +1,246 @@
+/**
+ * Accent themes for public service detail pages — aligned with Services mega-menu columns.
+ * Keys match DeliveryCategory slugs (see DeliveryCategorySeeder).
+ */
+
+const violet = {
+  label: 'AI Solutions',
+  heroSection:
+    'relative w-full overflow-hidden rounded-t-[2.75rem] bg-gradient-to-br from-violet-100/90 via-white to-indigo-100/85 pb-20 pt-10 dark:from-slate-900 dark:via-slate-950 dark:to-violet-950/35 sm:rounded-t-[3.75rem] sm:pb-28 sm:pt-14 md:rounded-t-[4.5rem] md:pt-16 lg:rounded-t-[5rem] lg:pb-32',
+  heroBlobTL:
+    'pointer-events-none absolute -left-24 -top-28 h-[17rem] w-[17rem] rounded-full bg-gradient-to-br from-violet-400/45 via-fuchsia-400/15 to-transparent blur-3xl dark:from-violet-600/30 dark:via-fuchsia-600/10',
+  heroBlobTR:
+    'pointer-events-none absolute -right-20 -top-32 h-[18rem] w-[18rem] rounded-full bg-gradient-to-bl from-indigo-400/45 via-sky-400/15 to-transparent blur-3xl dark:from-indigo-500/28 dark:via-sky-500/10',
+  heroCornerL:
+    'pointer-events-none absolute left-3 top-3 h-14 w-14 rounded-tl-[1.35rem] border-l-2 border-t-2 border-violet-400/55 sm:left-5 sm:top-5 sm:h-16 sm:w-16 sm:rounded-tl-[1.75rem] dark:border-violet-400/35',
+  heroCornerR:
+    'pointer-events-none absolute right-3 top-3 h-14 w-14 rounded-tr-[1.35rem] border-r-2 border-t-2 border-indigo-400/55 sm:right-5 sm:top-5 sm:h-16 sm:w-16 sm:rounded-tr-[1.75rem] dark:border-indigo-400/35',
+  heroBlobBottom:
+    'pointer-events-none absolute -bottom-12 left-1/2 h-72 w-[min(90vw,52rem)] -translate-x-1/2 rounded-full bg-violet-300/25 blur-3xl dark:bg-violet-700/15',
+  heroBlobBL:
+    'pointer-events-none absolute -left-16 bottom-0 h-52 w-52 rounded-full bg-cyan-200/35 blur-3xl dark:bg-cyan-600/15',
+  categoryPill:
+    'mb-4 inline-flex items-center gap-2 rounded-full border border-violet-200/90 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-violet-800 transition hover:bg-violet-50 dark:border-violet-500/30 dark:bg-violet-950/50 dark:text-violet-200 dark:hover:bg-violet-900/60',
+  categorySwatch: 'h-2 w-2 rounded-sm bg-violet-500',
+  eyebrowBadge:
+    'inline-flex items-center gap-2.5 rounded-full border border-violet-200/90 bg-white/70 px-3 py-1.5 pl-2 pr-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-violet-900 shadow-sm shadow-violet-500/5 ring-1 ring-violet-500/10 backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/70 dark:text-violet-100 dark:ring-white/10 sm:text-xs',
+  eyebrowIcon:
+    'flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 text-white shadow-md shadow-violet-500/30',
+  headingHighlight:
+    'bg-gradient-to-r from-violet-600 via-fuchsia-500 to-indigo-600 bg-clip-text text-transparent dark:from-violet-400 dark:via-fuchsia-400 dark:to-indigo-400',
+  chipIcon: 'h-3.5 w-3.5 text-violet-500',
+  primaryCta:
+    'group inline-flex min-h-[3rem] items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/25 transition hover:shadow-xl hover:shadow-violet-500/35 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white motion-safe:active:scale-[0.98] dark:focus-visible:ring-offset-slate-950',
+  secondaryCta:
+    'inline-flex min-h-[3rem] items-center justify-center rounded-2xl border border-slate-300/80 bg-white/90 px-8 py-3 text-sm font-semibold text-slate-900 shadow-sm backdrop-blur-sm transition hover:border-violet-300/80 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:border-slate-600 dark:bg-slate-800/80 dark:text-white dark:hover:border-violet-500/40 dark:hover:bg-slate-800 motion-safe:active:scale-[0.98] dark:focus-visible:ring-offset-slate-950',
+  heroImageGlow:
+    'pointer-events-none absolute -right-8 top-1/2 h-[85%] w-[70%] -translate-y-1/2 rounded-[2rem] bg-gradient-to-br from-fuchsia-500/25 via-violet-500/15 to-cyan-500/20 blur-3xl dark:from-fuchsia-600/20 dark:via-violet-600/15 dark:to-cyan-600/15',
+  heroImageBlob:
+    'pointer-events-none absolute -left-10 bottom-8 h-40 w-40 rounded-full bg-violet-400/30 blur-3xl dark:bg-violet-600/25',
+  heroImageRing:
+    'absolute -inset-px rounded-[1.9rem] bg-gradient-to-br from-violet-500/45 via-fuchsia-400/30 to-cyan-400/35 opacity-90 blur-[1px] dark:opacity-75',
+  heroImageFrame:
+    'relative overflow-hidden rounded-[1.8rem] border border-violet-200/50 bg-gradient-to-b from-violet-50/25 via-transparent to-indigo-50/20 shadow-[0_28px_70px_-18px_rgba(91,33,182,0.28)] ring-1 ring-violet-500/10 backdrop-blur-md dark:border-white/10 dark:from-slate-900/35 dark:via-transparent dark:to-violet-950/25 dark:shadow-[0_44px_100px_-24px_rgba(0,0,0,0.55)] dark:ring-white/[0.06]',
+  heroImageInner:
+    'pointer-events-none absolute inset-0 rounded-[1.5rem] bg-gradient-to-tr from-violet-400/[0.05] via-transparent to-cyan-400/[0.04]',
+  heroImageDrop:
+    'relative z-[1] h-auto w-full object-contain object-center px-2 py-3 sm:px-4 sm:py-5 transition duration-500 ease-out motion-safe:hover:scale-[1.012] drop-shadow-[0_20px_50px_rgba(91,33,182,0.2)] dark:drop-shadow-[0_24px_60px_rgba(0,0,0,0.4)]',
+  heroCaption:
+    'absolute -bottom-4 left-4 right-4 z-20 mx-auto max-w-sm rounded-2xl border border-white/70 bg-white/95 px-4 py-3.5 shadow-[0_22px_50px_-12px_rgba(91,33,182,0.22)] backdrop-blur-xl dark:border-slate-600/80 dark:bg-slate-900/95 dark:shadow-black/50 sm:left-auto sm:right-6 sm:mx-0',
+  heroCaptionEyebrow: 'text-[10px] font-semibold uppercase tracking-[0.22em] text-violet-600 dark:text-violet-300',
+  techSection:
+    'relative overflow-hidden border-t border-slate-200/70 bg-gradient-to-b from-slate-50 via-white to-violet-50/40 py-16 dark:border-slate-800/80 dark:from-slate-950 dark:via-slate-900 dark:to-violet-950/25 sm:py-20 md:py-24',
+  techDivider:
+    'pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-300/60 to-transparent dark:via-violet-500/35',
+  techBlobL: 'pointer-events-none absolute -left-32 top-1/4 h-64 w-64 rounded-full bg-violet-400/15 blur-3xl dark:bg-violet-600/20',
+  techBlobR: 'pointer-events-none absolute -right-24 bottom-0 h-56 w-56 rounded-full bg-indigo-400/15 blur-3xl dark:bg-indigo-600/15',
+  techEyebrowIcon:
+    'flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-indigo-700 text-white shadow-md shadow-violet-500/25',
+  techHeadingHighlight:
+    'bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent dark:from-violet-400 dark:to-indigo-400',
+  techIconTile:
+    'flex h-[3.25rem] w-[3.25rem] shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-white to-slate-50 shadow-[0_8px_24px_-12px_rgba(15,23,42,0.15)] ring-1 ring-slate-900/[0.06] transition duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-violet-500/10 dark:from-slate-800 dark:to-slate-900 dark:shadow-black/40 dark:ring-white/10 sm:h-16 sm:w-16',
+  techIconFallback:
+    'flex h-full w-full items-center justify-center rounded-lg bg-violet-100 text-[11px] font-bold text-violet-700 sm:text-xs dark:bg-violet-950/80 dark:text-violet-200',
+  techCta:
+    'inline-flex min-h-[3rem] items-center justify-center rounded-2xl bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-600 px-10 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/25 transition hover:shadow-xl hover:shadow-violet-500/35 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white motion-safe:active:scale-[0.98] dark:focus-visible:ring-offset-slate-950',
+  outcomesTopFade:
+    'pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-violet-50/80 to-transparent dark:from-violet-950/30',
+  outcomesEyebrow: 'text-center text-[11px] font-semibold uppercase tracking-[0.22em] text-violet-600 dark:text-violet-400',
+  outcomesCard:
+    'group rounded-3xl border border-slate-200/90 bg-gradient-to-b from-white to-slate-50/90 p-7 shadow-sm shadow-slate-900/[0.03] ring-1 ring-slate-900/[0.03] transition duration-300 hover:-translate-y-1 hover:border-violet-200/90 hover:shadow-xl hover:shadow-violet-500/[0.08] dark:border-slate-800 dark:from-slate-900 dark:to-slate-950 dark:shadow-none dark:ring-white/[0.06] dark:hover:border-violet-500/35',
+  outcomesCardIcon:
+    'flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500/15 to-fuchsia-600/5 ring-1 ring-violet-500/20 dark:from-violet-400/20 dark:to-fuchsia-600/10 dark:ring-violet-400/25',
+  outcomesCardIconColor: 'h-7 w-7 text-violet-600 dark:text-violet-400',
+  snapshotPanel:
+    'relative overflow-hidden rounded-3xl border border-slate-200/80 bg-gradient-to-br from-violet-50/70 via-white to-indigo-50/60 p-8 shadow-[0_30px_70px_-30px_rgba(91,33,182,0.18)] sm:p-10 md:p-14 dark:border-slate-800 dark:from-slate-900 dark:via-slate-950 dark:to-violet-950/30',
+  snapshotBlobTR:
+    'pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-violet-300/30 blur-3xl dark:bg-violet-700/20',
+  snapshotBlobBL:
+    'pointer-events-none absolute -left-16 bottom-0 h-56 w-56 rounded-full bg-indigo-300/25 blur-3xl dark:bg-indigo-700/20',
+  snapshotEyebrow:
+    'inline-block border-b-2 border-violet-500 pb-1 text-[10px] font-semibold uppercase tracking-[0.32em] text-violet-700 dark:border-violet-400 dark:text-violet-300',
+  snapshotHeadingHighlight:
+    'bg-gradient-to-r from-violet-600 via-fuchsia-500 to-indigo-600 bg-clip-text font-bold italic text-transparent dark:from-violet-400 dark:via-fuchsia-400 dark:to-indigo-400',
+  carouselBand: 'bg-gradient-to-br from-violet-600 to-purple-800',
+}
+
+const amber = {
+  label: 'Digital Marketing',
+  heroSection:
+    'relative w-full overflow-hidden rounded-t-[2.75rem] bg-gradient-to-br from-amber-100/90 via-white to-orange-100/85 pb-20 pt-10 dark:from-slate-900 dark:via-slate-950 dark:to-amber-950/35 sm:rounded-t-[3.75rem] sm:pb-28 sm:pt-14 md:rounded-t-[4.5rem] md:pt-16 lg:rounded-t-[5rem] lg:pb-32',
+  heroBlobTL:
+    'pointer-events-none absolute -left-24 -top-28 h-[17rem] w-[17rem] rounded-full bg-gradient-to-br from-amber-400/45 via-orange-400/15 to-transparent blur-3xl dark:from-amber-600/30 dark:via-orange-600/10',
+  heroBlobTR:
+    'pointer-events-none absolute -right-20 -top-32 h-[18rem] w-[18rem] rounded-full bg-gradient-to-bl from-orange-400/45 via-yellow-400/15 to-transparent blur-3xl dark:from-orange-500/28 dark:via-yellow-500/10',
+  heroCornerL:
+    'pointer-events-none absolute left-3 top-3 h-14 w-14 rounded-tl-[1.35rem] border-l-2 border-t-2 border-amber-400/55 sm:left-5 sm:top-5 sm:h-16 sm:w-16 sm:rounded-tl-[1.75rem] dark:border-amber-400/35',
+  heroCornerR:
+    'pointer-events-none absolute right-3 top-3 h-14 w-14 rounded-tr-[1.35rem] border-r-2 border-t-2 border-orange-400/55 sm:right-5 sm:top-5 sm:h-16 sm:w-16 sm:rounded-tr-[1.75rem] dark:border-orange-400/35',
+  heroBlobBottom:
+    'pointer-events-none absolute -bottom-12 left-1/2 h-72 w-[min(90vw,52rem)] -translate-x-1/2 rounded-full bg-amber-300/25 blur-3xl dark:bg-amber-700/15',
+  heroBlobBL:
+    'pointer-events-none absolute -left-16 bottom-0 h-52 w-52 rounded-full bg-yellow-200/35 blur-3xl dark:bg-yellow-600/15',
+  categoryPill:
+    'mb-4 inline-flex items-center gap-2 rounded-full border border-amber-200/90 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-amber-900 transition hover:bg-amber-50 dark:border-amber-500/30 dark:bg-amber-950/50 dark:text-amber-200 dark:hover:bg-amber-900/60',
+  categorySwatch: 'h-2 w-2 rounded-sm bg-amber-500',
+  eyebrowBadge:
+    'inline-flex items-center gap-2.5 rounded-full border border-amber-200/90 bg-white/70 px-3 py-1.5 pl-2 pr-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-amber-900 shadow-sm shadow-amber-500/5 ring-1 ring-amber-500/10 backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/70 dark:text-amber-100 dark:ring-white/10 sm:text-xs',
+  eyebrowIcon:
+    'flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-md shadow-amber-500/30',
+  headingHighlight:
+    'bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-600 bg-clip-text text-transparent dark:from-amber-400 dark:via-orange-400 dark:to-yellow-400',
+  chipIcon: 'h-3.5 w-3.5 text-amber-500',
+  primaryCta:
+    'group inline-flex min-h-[3rem] items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-amber-600 via-orange-600 to-yellow-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-amber-500/25 transition hover:shadow-xl hover:shadow-amber-500/35 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white motion-safe:active:scale-[0.98] dark:focus-visible:ring-offset-slate-950',
+  secondaryCta:
+    'inline-flex min-h-[3rem] items-center justify-center rounded-2xl border border-slate-300/80 bg-white/90 px-8 py-3 text-sm font-semibold text-slate-900 shadow-sm backdrop-blur-sm transition hover:border-amber-300/80 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:border-slate-600 dark:bg-slate-800/80 dark:text-white dark:hover:border-amber-500/40 dark:hover:bg-slate-800 motion-safe:active:scale-[0.98] dark:focus-visible:ring-offset-slate-950',
+  heroImageGlow:
+    'pointer-events-none absolute -right-8 top-1/2 h-[85%] w-[70%] -translate-y-1/2 rounded-[2rem] bg-gradient-to-br from-orange-500/25 via-amber-500/15 to-yellow-500/20 blur-3xl dark:from-orange-600/20 dark:via-amber-600/15 dark:to-yellow-600/15',
+  heroImageBlob:
+    'pointer-events-none absolute -left-10 bottom-8 h-40 w-40 rounded-full bg-amber-400/30 blur-3xl dark:bg-amber-600/25',
+  heroImageRing:
+    'absolute -inset-px rounded-[1.9rem] bg-gradient-to-br from-amber-500/45 via-orange-400/30 to-yellow-400/35 opacity-90 blur-[1px] dark:opacity-75',
+  heroImageFrame:
+    'relative overflow-hidden rounded-[1.8rem] border border-amber-200/50 bg-gradient-to-b from-amber-50/25 via-transparent to-orange-50/20 shadow-[0_28px_70px_-18px_rgba(180,83,9,0.28)] ring-1 ring-amber-500/10 backdrop-blur-md dark:border-white/10 dark:from-slate-900/35 dark:via-transparent dark:to-amber-950/25 dark:shadow-[0_44px_100px_-24px_rgba(0,0,0,0.55)] dark:ring-white/[0.06]',
+  heroImageInner:
+    'pointer-events-none absolute inset-0 rounded-[1.5rem] bg-gradient-to-tr from-amber-400/[0.05] via-transparent to-yellow-400/[0.04]',
+  heroImageDrop:
+    'relative z-[1] h-auto w-full object-contain object-center px-2 py-3 sm:px-4 sm:py-5 transition duration-500 ease-out motion-safe:hover:scale-[1.012] drop-shadow-[0_20px_50px_rgba(180,83,9,0.2)] dark:drop-shadow-[0_24px_60px_rgba(0,0,0,0.4)]',
+  heroCaption:
+    'absolute -bottom-4 left-4 right-4 z-20 mx-auto max-w-sm rounded-2xl border border-white/70 bg-white/95 px-4 py-3.5 shadow-[0_22px_50px_-12px_rgba(180,83,9,0.22)] backdrop-blur-xl dark:border-slate-600/80 dark:bg-slate-900/95 dark:shadow-black/50 sm:left-auto sm:right-6 sm:mx-0',
+  heroCaptionEyebrow: 'text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-600 dark:text-amber-300',
+  techSection:
+    'relative overflow-hidden border-t border-slate-200/70 bg-gradient-to-b from-slate-50 via-white to-amber-50/40 py-16 dark:border-slate-800/80 dark:from-slate-950 dark:via-slate-900 dark:to-amber-950/25 sm:py-20 md:py-24',
+  techDivider:
+    'pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-amber-300/60 to-transparent dark:via-amber-500/35',
+  techBlobL: 'pointer-events-none absolute -left-32 top-1/4 h-64 w-64 rounded-full bg-amber-400/15 blur-3xl dark:bg-amber-600/20',
+  techBlobR: 'pointer-events-none absolute -right-24 bottom-0 h-56 w-56 rounded-full bg-orange-400/15 blur-3xl dark:bg-orange-600/15',
+  techEyebrowIcon:
+    'flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-amber-600 to-orange-700 text-white shadow-md shadow-amber-500/25',
+  techHeadingHighlight:
+    'bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent dark:from-amber-400 dark:to-orange-400',
+  techIconTile:
+    'flex h-[3.25rem] w-[3.25rem] shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-white to-slate-50 shadow-[0_8px_24px_-12px_rgba(15,23,42,0.15)] ring-1 ring-slate-900/[0.06] transition duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-amber-500/10 dark:from-slate-800 dark:to-slate-900 dark:shadow-black/40 dark:ring-white/10 sm:h-16 sm:w-16',
+  techIconFallback:
+    'flex h-full w-full items-center justify-center rounded-lg bg-amber-100 text-[11px] font-bold text-amber-800 sm:text-xs dark:bg-amber-950/80 dark:text-amber-200',
+  techCta:
+    'inline-flex min-h-[3rem] items-center justify-center rounded-2xl bg-gradient-to-r from-amber-600 via-orange-600 to-yellow-600 px-10 py-3 text-sm font-semibold text-white shadow-lg shadow-amber-500/25 transition hover:shadow-xl hover:shadow-amber-500/35 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white motion-safe:active:scale-[0.98] dark:focus-visible:ring-offset-slate-950',
+  outcomesTopFade:
+    'pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-amber-50/80 to-transparent dark:from-amber-950/30',
+  outcomesEyebrow: 'text-center text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-600 dark:text-amber-400',
+  outcomesCard:
+    'group rounded-3xl border border-slate-200/90 bg-gradient-to-b from-white to-slate-50/90 p-7 shadow-sm shadow-slate-900/[0.03] ring-1 ring-slate-900/[0.03] transition duration-300 hover:-translate-y-1 hover:border-amber-200/90 hover:shadow-xl hover:shadow-amber-500/[0.08] dark:border-slate-800 dark:from-slate-900 dark:to-slate-950 dark:shadow-none dark:ring-white/[0.06] dark:hover:border-amber-500/35',
+  outcomesCardIcon:
+    'flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500/15 to-orange-600/5 ring-1 ring-amber-500/20 dark:from-amber-400/20 dark:to-orange-600/10 dark:ring-amber-400/25',
+  outcomesCardIconColor: 'h-7 w-7 text-amber-600 dark:text-amber-400',
+  snapshotPanel:
+    'relative overflow-hidden rounded-3xl border border-slate-200/80 bg-gradient-to-br from-amber-50/70 via-white to-orange-50/60 p-8 shadow-[0_30px_70px_-30px_rgba(180,83,9,0.18)] sm:p-10 md:p-14 dark:border-slate-800 dark:from-slate-900 dark:via-slate-950 dark:to-amber-950/30',
+  snapshotBlobTR:
+    'pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-amber-300/30 blur-3xl dark:bg-amber-700/20',
+  snapshotBlobBL:
+    'pointer-events-none absolute -left-16 bottom-0 h-56 w-56 rounded-full bg-orange-300/25 blur-3xl dark:bg-orange-700/20',
+  snapshotEyebrow:
+    'inline-block border-b-2 border-amber-500 pb-1 text-[10px] font-semibold uppercase tracking-[0.32em] text-amber-800 dark:border-amber-400 dark:text-amber-300',
+  snapshotHeadingHighlight:
+    'bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-600 bg-clip-text font-bold italic text-transparent dark:from-amber-400 dark:via-orange-400 dark:to-yellow-400',
+  carouselBand: 'bg-gradient-to-br from-amber-500 to-orange-700',
+}
+
+const blue = {
+  ...violet,
+  label: 'Web Development',
+  carouselBand: 'bg-gradient-to-br from-blue-600 to-blue-800',
+  heroSection:
+    'relative w-full overflow-hidden rounded-t-[2.75rem] bg-gradient-to-br from-blue-100/90 via-white to-sky-100/85 pb-20 pt-10 dark:from-slate-900 dark:via-slate-950 dark:to-blue-950/35 sm:rounded-t-[3.75rem] sm:pb-28 sm:pt-14 md:rounded-t-[4.5rem] md:pt-16 lg:rounded-t-[5rem] lg:pb-32',
+  categoryPill:
+    'mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200/90 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-900 transition hover:bg-blue-50 dark:border-blue-500/30 dark:bg-blue-950/50 dark:text-blue-200 dark:hover:bg-blue-900/60',
+  categorySwatch: 'h-2 w-2 rounded-sm bg-blue-500',
+  headingHighlight:
+    'bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 bg-clip-text text-transparent dark:from-blue-400 dark:via-sky-400 dark:to-indigo-400',
+  primaryCta:
+    'group inline-flex min-h-[3rem] items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 via-sky-600 to-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/25 transition hover:shadow-xl hover:shadow-blue-500/35 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white motion-safe:active:scale-[0.98] dark:focus-visible:ring-offset-slate-950',
+}
+
+const emerald = {
+  ...violet,
+  label: 'Mobile App Development',
+  carouselBand: 'bg-gradient-to-br from-emerald-600 to-emerald-800',
+  heroSection:
+    'relative w-full overflow-hidden rounded-t-[2.75rem] bg-gradient-to-br from-emerald-100/90 via-white to-teal-100/85 pb-20 pt-10 dark:from-slate-900 dark:via-slate-950 dark:to-emerald-950/35 sm:rounded-t-[3.75rem] sm:pb-28 sm:pt-14 md:rounded-t-[4.5rem] md:pt-16 lg:rounded-t-[5rem] lg:pb-32',
+  categoryPill:
+    'mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-200/90 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-900 transition hover:bg-emerald-50 dark:border-emerald-500/30 dark:bg-emerald-950/50 dark:text-emerald-200 dark:hover:bg-emerald-900/60',
+  categorySwatch: 'h-2 w-2 rounded-sm bg-emerald-500',
+  headingHighlight:
+    'bg-gradient-to-r from-emerald-600 via-teal-500 to-cyan-600 bg-clip-text text-transparent dark:from-emerald-400 dark:via-teal-400 dark:to-cyan-400',
+  primaryCta:
+    'group inline-flex min-h-[3rem] items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/25 transition hover:shadow-xl hover:shadow-emerald-500/35 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white motion-safe:active:scale-[0.98] dark:focus-visible:ring-offset-slate-950',
+}
+
+/** @type {Record<string, typeof violet>} */
+export const serviceCategoryThemes = {
+  'web-development': blue,
+  'mobile-development': emerald,
+  'ai-solutions': violet,
+  'digital-marketing': amber,
+  // Design services (catalog categories)
+  'logo-brand-identity': { ...amber, label: 'Logo & Brand Identity', carouselBand: 'bg-gradient-to-br from-rose-600 to-rose-800' },
+  'art-illustration': { ...violet, label: 'Art & Illustration', carouselBand: 'bg-gradient-to-br from-fuchsia-600 to-purple-800' },
+  'print-design': { ...amber, label: 'Print Design', carouselBand: 'bg-gradient-to-br from-orange-600 to-orange-800' },
+  'books-ebooks': { ...amber, label: 'Books & eBooks' },
+  'visual-design': { ...blue, label: 'Visual Design', carouselBand: 'bg-gradient-to-br from-sky-600 to-blue-800' },
+  'marketing-design': { ...amber, label: 'Marketing Design', carouselBand: 'bg-gradient-to-br from-pink-600 to-rose-800' },
+  'architecture-building-design': { ...emerald, label: 'Architecture & Building Design', carouselBand: 'bg-gradient-to-br from-slate-600 to-slate-800' },
+  'fashion-merchandise': { ...amber, label: 'Fashion & Merchandise', carouselBand: 'bg-gradient-to-br from-pink-500 to-pink-700' },
+  '3d-design': { ...blue, label: '3D Design', carouselBand: 'bg-gradient-to-br from-cyan-600 to-cyan-800' },
+  'design-miscellaneous': { ...emerald, label: 'Miscellaneous', carouselBand: 'bg-gradient-to-br from-slate-500 to-slate-700' },
+  'ai-mobile-development': { ...violet, label: 'AI Mobile Development' },
+  'ai-creative-artists': { ...violet, label: 'AI Artists', carouselBand: 'bg-gradient-to-br from-fuchsia-600 to-purple-800' },
+  'ai-video-production': { ...violet, label: 'AI Video' },
+  'ai-audio': { ...violet, label: 'AI Audio', carouselBand: 'bg-gradient-to-br from-indigo-600 to-indigo-800' },
+  'ai-content': { ...blue, label: 'AI Content', carouselBand: 'bg-gradient-to-br from-sky-600 to-blue-800' },
+  'video-editing-post-production': { ...amber, label: 'Editing & Post-Production', carouselBand: 'bg-gradient-to-br from-rose-600 to-rose-800' },
+  'social-marketing-videos': { ...amber, label: 'Social & Marketing Videos', carouselBand: 'bg-gradient-to-br from-pink-600 to-rose-800' },
+  'animation-services': { ...amber, label: 'Animation', carouselBand: 'bg-gradient-to-br from-orange-600 to-orange-800' },
+  'product-videos': { ...amber, label: 'Product Videos' },
+}
+
+/**
+ * @param {string | null | undefined} categorySlug
+ * @returns {typeof violet}
+ */
+export function themeForCategorySlug(categorySlug) {
+  if (categorySlug && serviceCategoryThemes[categorySlug]) {
+    return serviceCategoryThemes[categorySlug]
+  }
+
+  return violet
+}
+
+/**
+ * @param {string | null | undefined} categorySlug
+ * @returns {string}
+ */
+export function carouselBandForCategory(categorySlug) {
+  return themeForCategorySlug(categorySlug).carouselBand
+}

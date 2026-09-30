@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-label="Service illustration placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" fill="url(#bg)"/>
+  <circle cx="720" cy="180" r="120" fill="#fff" opacity="0.08"/>
+  <circle cx="200" cy="560" r="160" fill="#fff" opacity="0.06"/>
+  <text x="480" y="360" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="32" font-weight="600" opacity="0.92">Creafynest</text>
+  <text x="480" y="400" text-anchor="middle" fill="#e0e7ff" font-family="system-ui,sans-serif" font-size="18" opacity="0.85">Digital services</text>
+</svg>

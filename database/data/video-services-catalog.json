@@ -1,0 +1,58 @@
+{
+  "categories": [
+    {
+      "slug": "video-editing-post-production",
+      "title": "Editing & Post-Production",
+      "subtitle": "Professional cuts, effects, captions, and deliverables for every platform.",
+      "feature_icon": "Film",
+      "color": "rose",
+      "services": [
+        { "title": "Video Editing", "slug": "video-editing", "icon": "Scissors", "description": "Narrative editing, pacing, and color polish for ads, docs, and long-form content." },
+        { "title": "Visual Effects", "slug": "visual-effects", "icon": "Sparkles", "description": "Compositing, cleanup, and VFX that elevate production value without reshoots." },
+        { "title": "Intro & Outro Videos", "slug": "intro-outro-videos", "icon": "Play", "description": "Branded openers and outros for YouTube, podcasts, and course libraries." },
+        { "title": "Video Repurposing", "slug": "video-repurposing", "icon": "Repeat", "description": "Turn long-form footage into shorts, reels, and cutdowns with platform-safe specs." },
+        { "title": "Video Templates Editing", "slug": "video-templates-editing", "icon": "LayoutTemplate", "description": "After Effects and Premiere templates customized to your brand kit." },
+        { "title": "Subtitles & Captions", "slug": "subtitles-captions", "icon": "Captions", "description": "Accurate captions, SRT/VTT delivery, and burned-in styles for accessibility." }
+      ]
+    },
+    {
+      "slug": "social-marketing-videos",
+      "title": "Social & Marketing Videos",
+      "subtitle": "Performance creative built for feeds, stories, and paid placements.",
+      "feature_icon": "Megaphone",
+      "color": "pink",
+      "services": [
+        { "title": "Video Ads & Commercials", "slug": "video-ads-commercials", "icon": "Tv", "description": "Direct-response and brand ads with hooks, supers, and platform aspect ratios." },
+        { "title": "Social Media Videos", "slug": "social-media-videos", "icon": "Share2", "description": "Thumb-stopping social cuts tuned for TikTok, Reels, LinkedIn, and YouTube Shorts." }
+      ]
+    },
+    {
+      "slug": "animation-services",
+      "title": "Animation",
+      "subtitle": "2D motion, character animation, and stylized explainers.",
+      "feature_icon": "Clapperboard",
+      "color": "orange",
+      "services": [
+        { "title": "Whiteboard Animation", "slug": "whiteboard-animation", "icon": "PenLine", "description": "Clear whiteboard explainers for SaaS, education, and internal comms." },
+        { "title": "Hand Drawn Animation", "slug": "hand-drawn-animation", "icon": "Pencil", "description": "Organic hand-drawn motion with custom illustration and frame-by-frame charm." },
+        { "title": "Animation for Kids", "slug": "animation-for-kids", "icon": "Baby", "description": "Kid-safe characters, pacing, and color for apps, YouTube, and learning content." },
+        { "title": "Animation for Streamers", "slug": "animation-for-streamers", "icon": "Radio", "description": "Alerts, overlays, stingers, and channel bumpers for Twitch and YouTube Live." },
+        { "title": "Rigging", "slug": "video-rigging", "icon": "Move3d", "description": "Character rigs for 2D/3D puppets ready for animators and motion teams." },
+        { "title": "NFT Animation", "slug": "nft-animation", "icon": "Hexagon", "description": "Looping and hero animations for collections, drops, and Web3 campaigns." }
+      ]
+    },
+    {
+      "slug": "product-videos",
+      "title": "Product Videos",
+      "subtitle": "Showcase products, apps, and brands with conversion-focused motion.",
+      "feature_icon": "Package",
+      "color": "amber",
+      "services": [
+        { "title": "3D Product Animation", "slug": "3d-product-animation", "icon": "Box", "description": "Photoreal 3D product spins and hero shots for ecommerce and launch films." },
+        { "title": "E-Commerce Product Videos", "slug": "ecommerce-product-videos", "icon": "ShoppingCart", "description": "Listing videos and lifestyle cuts that lift CTR and reduce returns." },
+        { "title": "Corporate Videos", "slug": "corporate-videos", "icon": "Building2", "description": "Culture, recruiting, and leadership films with credible story arcs." },
+        { "title": "App & Website Previews", "slug": "app-website-previews", "icon": "Monitor", "description": "UI capture, device mockups, and motion demos for stores and landing pages." }
+      ]
+    }
+  ]
+}
