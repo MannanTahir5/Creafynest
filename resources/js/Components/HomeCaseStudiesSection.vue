@@ -247,36 +247,6 @@ function wordmark(title) {
             </div>
           </div>
         </div>
-
-        <!-- All projects strip -->
-        <ul class="mt-10 divide-y divide-slate-100 dark:divide-slate-800 border-t border-slate-100 dark:border-slate-800">
-          <li
-            v-for="(project, index) in projects"
-            :key="project.slug"
-            class="flex items-center justify-between gap-4 py-3.5 cursor-pointer transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 px-1 rounded-lg"
-            :class="index === current ? 'opacity-100' : 'opacity-60 hover:opacity-100'"
-            @click="current = index"
-          >
-            <div class="flex items-center gap-3 min-w-0">
-              <span
-                class="shrink-0 h-2 w-2 rounded-full transition-colors"
-                :class="index === current ? 'bg-violet-600 dark:bg-violet-400' : 'bg-slate-300 dark:bg-slate-600'"
-              />
-              <span
-                class="truncate text-sm font-semibold text-slate-900 dark:text-white transition-colors"
-                :class="index === current ? 'text-violet-700 dark:text-violet-300' : ''"
-              >{{ project.title }}</span>
-              <span v-if="project.category" class="hidden sm:inline text-xs text-slate-400 dark:text-slate-500 shrink-0">— {{ project.category }}</span>
-            </div>
-            <Link
-              :href="`/portfolio/${project.slug}`"
-              class="shrink-0 text-xs font-medium text-violet-600 dark:text-violet-400 hover:underline"
-              @click.stop
-            >
-              View →
-            </Link>
-          </li>
-        </ul>
       </template>
 
       <template v-else>

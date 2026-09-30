@@ -1,1 +1,0 @@
-import{c as n,au as r,o as a}from"./app-stH3RfuG.js";const l=(t,o)=>{const e=t.__vccOpts||t;for(const[s,c]of o)e[s]=c;return e},_={},f={class:"mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8"};function p(t,o){return a(),n("div",f,[r(t.$slots,"default")])}const m=l(_,[["render",p]]);export{m as C,l as _};
