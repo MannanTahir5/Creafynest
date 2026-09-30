@@ -329,16 +329,6 @@ const overviewStats = computed(() => [
                 </div>
                 <div v-if="project.live_url || project.github_url" class="mt-8 flex flex-wrap items-center gap-3">
                   <a
-                    v-if="project.live_url"
-                    :href="project.live_url"
-                    target="_blank"
-                    rel="noreferrer"
-                    class="inline-flex items-center gap-2 bg-yellow-300 px-6 py-3 text-sm font-extrabold uppercase tracking-[0.16em] text-slate-950 transition hover:bg-yellow-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2"
-                  >
-                    View website
-                    <ArrowRight class="h-4 w-4" aria-hidden="true" />
-                  </a>
-                  <a
                     v-if="project.github_url"
                     :href="project.github_url"
                     target="_blank"
