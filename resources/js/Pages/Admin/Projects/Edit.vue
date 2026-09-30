@@ -34,7 +34,6 @@ const form = useForm({
   video_urls: '',
   keep_videos: [...(props.project.video_urls || [])],
   live_url: props.project.live_url || '',
-  github_url: props.project.github_url || '',
   image: null,
   gallery: [],
   keep_gallery: [...(props.project.gallery || [])],
@@ -284,33 +283,18 @@ function selectGalleryMedia(event) {
         <p class="mt-1 text-xs text-slate-500">Upload video files up to 100MB. Ensure server upload limits (upload_max_filesize and post_max_size) are configured accordingly.</p>
         <p v-if="form.errors.video_files" class="mt-1 text-xs text-rose-600" role="alert">{{ form.errors.video_files }}</p>
       </div>
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <div>
-          <label for="edit-project-live" class="block text-sm font-medium text-slate-700">Live URL</label>
-          <input
-            id="edit-project-live"
-            v-model="form.live_url"
-            type="url"
-            class="form-input"
-            :class="{ 'form-input-invalid': !!form.errors.live_url }"
-            placeholder="https://example.com"
-          >
-          <p v-if="form.errors.live_url" class="mt-1 text-xs text-rose-600" role="alert">{{ form.errors.live_url }}</p>
-        </div>
-        <div>
-          <label for="edit-project-github" class="block text-sm font-medium text-slate-700">GitHub URL</label>
-          <input
-            id="edit-project-github"
-            v-model="form.github_url"
-            type="url"
-            class="form-input"
-            :class="{ 'form-input-invalid': !!form.errors.github_url }"
-            placeholder="https://github.com/username/project"
-          >
-          <p v-if="form.errors.github_url" class="mt-1 text-xs text-rose-600" role="alert">{{ form.errors.github_url }}</p>
-        </div>
+      <div>
+        <label for="edit-project-live" class="block text-sm font-medium text-slate-700">Live URL</label>
+        <input
+          id="edit-project-live"
+          v-model="form.live_url"
+          type="url"
+          class="form-input"
+          :class="{ 'form-input-invalid': !!form.errors.live_url }"
+          placeholder="https://example.com"
+        >
+        <p v-if="form.errors.live_url" class="mt-1 text-xs text-rose-600" role="alert">{{ form.errors.live_url }}</p>
       </div>
-
       <div>
         <label for="edit-project-hero" class="block text-sm font-medium text-slate-700">Replace hero image</label>
         <div v-if="project.image_url" class="mt-1 mb-2 flex items-center gap-3">

@@ -128,33 +128,30 @@ class Project extends Model
     {
         $slugOrder = $slugOrder ?? \App\Models\HomePageSetting::singleton()->featuredProjectSlugList();
 
-        if ($slugOrder === []) {
-            $slugOrder = [
-                'swiftcare-patient-portal',
-                'northwind-operations-hub',
-                'aurora-booking-co',
-                'fieldlink-mobile',
-                'northern-stack-erp',
-            ];
-        }
-        $bySlug = self::query()->whereIn('slug', $slugOrder)->get()->keyBy('slug');
+        if (!empty($slugOrder)) {
+            $bySlug = self::query()->whereIn('slug', $slugOrder)->get()->keyBy('slug');
 
-        $ordered = collect($slugOrder)
-            ->map(fn (string $slug) => $bySlug->get($slug))
-            ->filter();
+            $ordered = collect($slugOrder)
+                ->map(fn (string $slug) => $bySlug->get($slug))
+                ->filter();
 
-        $needed = 5 - $ordered->count();
-        $rest = $needed > 0
-            ? self::query()
+            // Append any projects not in the curated list (latest first)
+            $rest = self::query()
                 ->whereNotIn('slug', $slugOrder)
                 ->latest()
-                ->limit($needed)
-                ->get()
-            : collect();
+                ->get();
 
-        return $ordered
-            ->concat($rest)
-            ->take(5)
+            return $ordered
+                ->concat($rest)
+                ->map(fn (self $project) => self::toCaseStudyPayload($project))
+                ->values()
+                ->all();
+        }
+
+        // No curated list — return all projects, latest first
+        return self::query()
+            ->latest()
+            ->get()
             ->map(fn (self $project) => self::toCaseStudyPayload($project))
             ->values()
             ->all();

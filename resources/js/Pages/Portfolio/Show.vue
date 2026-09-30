@@ -327,18 +327,7 @@ const overviewStats = computed(() => [
                   <p class="text-xs font-extrabold uppercase tracking-[0.14em] text-slate-950 dark:text-white">Services</p>
                   <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">{{ servicesList.join(', ') }}</p>
                 </div>
-                <div v-if="project.live_url || project.github_url" class="mt-8 flex flex-wrap items-center gap-3">
-                  <a
-                    v-if="project.github_url"
-                    :href="project.github_url"
-                    target="_blank"
-                    rel="noreferrer"
-                    class="inline-flex items-center gap-2 border border-slate-300 bg-slate-100 px-5 py-3 text-sm font-extrabold uppercase tracking-[0.14em] text-slate-900 transition hover:bg-slate-200 dark:border-white/20 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
-                  >
-                    GitHub Repo
-                    <ArrowRight class="h-4 w-4" aria-hidden="true" />
-                  </a>
-                </div>
+
               </div>
               <div v-if="heroVisual" class="relative mx-auto w-full max-w-xl pt-4">
                 <div class="overflow-hidden rounded-xl border-[7px] border-slate-100 bg-slate-950 shadow-[0_24px_50px_-22px_rgba(15,23,42,0.6)] ring-1 ring-slate-300 dark:border-[#342524] dark:ring-[#57403d]">
