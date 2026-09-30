@@ -248,23 +248,16 @@ onUnmounted(() => {
             {{ item.label }}
           </Link>
 
-          <div v-else class="rounded-lg border border-slate-800 bg-slate-900/50">
-            <button
-              type="button"
-              class="flex w-full items-center justify-between gap-2 px-3 py-2.5 text-left text-sm font-medium text-slate-200 hover:bg-slate-800/80"
-              :aria-expanded="servicesAccordionOpen"
-              @click="toggleServicesAccordion"
-            >
-              <span class="flex items-center gap-2">
-                <Briefcase class="h-4 w-4 opacity-80" stroke-width="1.75" />
-                Services
-              </span>
-              <ChevronDown class="h-4 w-4 transition" :class="servicesAccordionOpen ? 'rotate-180' : ''" />
-            </button>
-            <div v-show="servicesAccordionOpen" class="border-t border-slate-800 px-2 pb-3 pt-1">
-              <ServicesMegaMenu @navigate="closeMenu" />
-            </div>
-          </div>
+          <Link
+            v-else
+            href="/services"
+            class="flex items-center gap-2 rounded-md px-3 py-2.5 text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-white"
+            :class="isServicesPath ? 'bg-slate-800 text-white' : ''"
+            @click="closeMenu"
+          >
+            <Briefcase class="h-4 w-4 opacity-80" stroke-width="1.75" />
+            Services
+          </Link>
         </template>
 
         <Link
