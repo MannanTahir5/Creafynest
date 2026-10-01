@@ -36,38 +36,42 @@ final class WebpDerivative
             return;
         }
 
-        if (! function_exists('imagewebp')) {
+        if (! function_exists('imagewebp') || ! function_exists('imagecreatefromstring')) {
             return;
         }
 
-        $original = self::absoluteOriginal($storedRelativePath);
-        if (! is_file($original)) {
-            return;
-        }
+        try {
+            $original = self::absoluteOriginal($storedRelativePath);
+            if (! is_file($original)) {
+                return;
+            }
 
-        $ext = Str::lower(pathinfo($original, PATHINFO_EXTENSION));
-        if ($ext === 'webp') {
-            return;
-        }
+            $ext = Str::lower(pathinfo($original, PATHINFO_EXTENSION));
+            if ($ext === 'webp') {
+                return;
+            }
 
-        $binary = @file_get_contents($original);
-        if ($binary === false) {
-            return;
-        }
+            $binary = @file_get_contents($original);
+            if ($binary === false || $binary === '') {
+                return;
+            }
 
-        $image = @imagecreatefromstring($binary);
-        if ($image === false) {
-            return;
-        }
+            $image = @imagecreatefromstring($binary);
+            if ($image === false || ! $image) {
+                return;
+            }
 
-        $webpPath = self::absoluteWebp($storedRelativePath);
-        $dir = dirname($webpPath);
-        if (! is_dir($dir)) {
-            mkdir($dir, 0755, true);
-        }
+            $webpPath = self::absoluteWebp($storedRelativePath);
+            $dir = dirname($webpPath);
+            if (! is_dir($dir)) {
+                @mkdir($dir, 0755, true);
+            }
 
-        imagewebp($image, $webpPath, 82);
-        imagedestroy($image);
+            @imagewebp($image, $webpPath, 82);
+            @imagedestroy($image);
+        } catch (\Throwable $e) {
+            // Ignore GD WebP encoding failure gracefully
+        }
     }
 
     public static function deleteForOriginal(?string $storedRelativePath): void

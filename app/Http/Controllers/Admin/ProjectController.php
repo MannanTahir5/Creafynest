@@ -52,13 +52,13 @@ class ProjectController extends Controller
             : UniqueSlug::for('projects', $data['title']);
 
         $imagePath = null;
-        if ($request->hasFile('image')) {
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
             $imagePath = $request->file('image')->store('projects', 'public');
             WebpDerivative::encodeFromStoredPublicPath($imagePath);
         }
 
         $logoPath = null;
-        if ($request->hasFile('logo_image')) {
+        if ($request->hasFile('logo_image') && $request->file('logo_image')->isValid()) {
             $logoPath = $request->file('logo_image')->store('projects/logo', 'public');
             WebpDerivative::encodeFromStoredPublicPath($logoPath);
         }
@@ -66,7 +66,7 @@ class ProjectController extends Controller
         $galleryPaths = [];
         if ($request->hasFile('gallery')) {
             foreach ((array) $request->file('gallery') as $file) {
-                if ($file) {
+                if ($file && $file->isValid()) {
                     $stored = $file->store('projects/gallery', 'public');
                     WebpDerivative::encodeFromStoredPublicPath($stored);
                     $galleryPaths[] = $stored;
@@ -75,25 +75,25 @@ class ProjectController extends Controller
         }
 
         $howItStartedImagePath = null;
-        if ($request->hasFile('how_it_started_image')) {
+        if ($request->hasFile('how_it_started_image') && $request->file('how_it_started_image')->isValid()) {
             $howItStartedImagePath = $request->file('how_it_started_image')->store('projects/story', 'public');
             WebpDerivative::encodeFromStoredPublicPath($howItStartedImagePath);
         }
 
         $challengeImagePath = null;
-        if ($request->hasFile('challenge_image')) {
+        if ($request->hasFile('challenge_image') && $request->file('challenge_image')->isValid()) {
             $challengeImagePath = $request->file('challenge_image')->store('projects/story', 'public');
             WebpDerivative::encodeFromStoredPublicPath($challengeImagePath);
         }
 
         $approachImagePath = null;
-        if ($request->hasFile('approach_image')) {
+        if ($request->hasFile('approach_image') && $request->file('approach_image')->isValid()) {
             $approachImagePath = $request->file('approach_image')->store('projects/story', 'public');
             WebpDerivative::encodeFromStoredPublicPath($approachImagePath);
         }
 
         $resultsImagePath = null;
-        if ($request->hasFile('results_image')) {
+        if ($request->hasFile('results_image') && $request->file('results_image')->isValid()) {
             $resultsImagePath = $request->file('results_image')->store('projects/story', 'public');
             WebpDerivative::encodeFromStoredPublicPath($resultsImagePath);
         }
@@ -101,7 +101,7 @@ class ProjectController extends Controller
         $videoPaths = [];
         if ($request->hasFile('video_files')) {
             foreach ((array) $request->file('video_files') as $file) {
-                if ($file) {
+                if ($file && $file->isValid()) {
                     $videoPaths[] = $file->store('projects/videos', 'public');
                 }
             }
@@ -151,7 +151,6 @@ class ProjectController extends Controller
             'video_url' => $data['video_url'] ?? null,
             'video_urls' => $videoList ?: null,
             'live_url' => $data['live_url'],
-            'github_url' => $data['github_url'],
         ]);
 
         ContentCache::forget();
@@ -246,7 +245,7 @@ class ProjectController extends Controller
             : UniqueSlug::for('projects', $data['title'], $project->slug, $project->id);
 
         $imagePath = $project->image;
-        if ($request->hasFile('image')) {
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
             if ($project->image) {
                 WebpDerivative::deleteForOriginal($project->image);
                 Storage::disk('public')->delete($project->image);
@@ -256,7 +255,7 @@ class ProjectController extends Controller
         }
 
         $logoPath = $project->logo_url;
-        if ($request->hasFile('logo_image')) {
+        if ($request->hasFile('logo_image') && $request->file('logo_image')->isValid()) {
             if ($project->logo_url) {
                 WebpDerivative::deleteForOriginal($project->logo_url);
                 Storage::disk('public')->delete($project->logo_url);
@@ -275,7 +274,7 @@ class ProjectController extends Controller
 
         if ($request->hasFile('gallery')) {
             foreach ((array) $request->file('gallery') as $file) {
-                if ($file) {
+                if ($file && $file->isValid()) {
                     $stored = $file->store('projects/gallery', 'public');
                     WebpDerivative::encodeFromStoredPublicPath($stored);
                     $newGallery[] = $stored;
@@ -290,7 +289,7 @@ class ProjectController extends Controller
         }
 
         $howItStartedImagePath = $project->how_it_started_image;
-        if ($request->hasFile('how_it_started_image')) {
+        if ($request->hasFile('how_it_started_image') && $request->file('how_it_started_image')->isValid()) {
             if ($project->how_it_started_image) {
                 WebpDerivative::deleteForOriginal($project->how_it_started_image);
                 Storage::disk('public')->delete($project->how_it_started_image);
@@ -300,7 +299,7 @@ class ProjectController extends Controller
         }
 
         $challengeImagePath = $project->challenge_image;
-        if ($request->hasFile('challenge_image')) {
+        if ($request->hasFile('challenge_image') && $request->file('challenge_image')->isValid()) {
             if ($project->challenge_image) {
                 WebpDerivative::deleteForOriginal($project->challenge_image);
                 Storage::disk('public')->delete($project->challenge_image);
@@ -310,7 +309,7 @@ class ProjectController extends Controller
         }
 
         $approachImagePath = $project->approach_image;
-        if ($request->hasFile('approach_image')) {
+        if ($request->hasFile('approach_image') && $request->file('approach_image')->isValid()) {
             if ($project->approach_image) {
                 WebpDerivative::deleteForOriginal($project->approach_image);
                 Storage::disk('public')->delete($project->approach_image);
@@ -320,7 +319,7 @@ class ProjectController extends Controller
         }
 
         $resultsImagePath = $project->results_image;
-        if ($request->hasFile('results_image')) {
+        if ($request->hasFile('results_image') && $request->file('results_image')->isValid()) {
             if ($project->results_image) {
                 WebpDerivative::deleteForOriginal($project->results_image);
                 Storage::disk('public')->delete($project->results_image);
@@ -332,7 +331,7 @@ class ProjectController extends Controller
         $videoPaths = [];
         if ($request->hasFile('video_files')) {
             foreach ((array) $request->file('video_files') as $file) {
-                if ($file) {
+                if ($file && $file->isValid()) {
                     $videoPaths[] = $file->store('projects/videos', 'public');
                 }
             }
