@@ -396,8 +396,8 @@ class ProjectController extends Controller
             'logo_is_light' => $data['logo_is_light'] ?? false,
             'video_url' => $data['video_url'] ?? $project->video_url,
             'video_urls' => $videoList ?: null,
-            'live_url' => $data['live_url'],
-            'github_url' => $data['github_url'],
+            'live_url' => $data['live_url'] ?? null,
+            'github_url' => $data['github_url'] ?? null,
         ]);
 
         ContentCache::forget();
@@ -535,8 +535,8 @@ class ProjectController extends Controller
             'logo_is_light' => $validated['logo_is_light'] ?? false,
             'video_url' => $validated['video_url'] ?? null,
             'video_urls' => $validated['video_urls'] ?? null,
-            'live_url' => $validated['live_url'] ?: null,
-            'github_url' => $validated['github_url'] ?: null,
+            'live_url' => $validated['live_url'] ?? null,
+            'github_url' => $validated['github_url'] ?? null,
         ];
     }
 }
